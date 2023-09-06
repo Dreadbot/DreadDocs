@@ -5,7 +5,7 @@ branding:
   title: Dread Docs
   label: Docs
 links:
-- text: WpiLib Documentation
+- text: WPILib Documentation
   link: https://docs.wpilib.org/en/stable/index.html
 footer:
   copyright: "Up to date with WpiLib {{year}}"
