@@ -19,9 +19,9 @@ To create a variable, you need 4 things:
 
 Type | Value
 --- | ---
-`int` | whole numbers (such as 1, 2, -3, etc.)
-`double` | numbers with a decimal (such as 1.234)
-`boolean` | can be true or false
+`int` | Whole numbers (such as 1, 2, -3, etc.)
+`double` | Numbers with a decimal (such as 1.234)
+`boolean` | Can be true or false
 
 More information on booleans is available at [Control Flow](./ControlFlow.md).  
 More information on types is available at [Types](./Types.md).  
