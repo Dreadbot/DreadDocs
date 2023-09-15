@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml.gz
+Sitemap: https://dreadbot.github.io/DreadDocs/sitemap.xml.gz
