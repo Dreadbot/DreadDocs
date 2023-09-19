@@ -4,7 +4,7 @@
 Work in Progress!
 !!!
 
-Welcome to our Docs! Here you Will Find Information about `WPILib`, robot programming, and [Java](Java/java.md).
+Welcome to our Docs! Here you will find Information about `WPILib`, robot programming, and [Java](Java/java.md).
 
 ## Where to Start?
 
