@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/DreadDocs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.4.1.748108410308">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748476974400">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.4.1">
+    <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
     <title>Classes</title>
     <meta name="title" content="Classes">
-    <meta name="description" content="Classes are one of the most important features of Java.">
+    <meta name="description" content="Classes are one of the most important features of Java. They allow us to represent and package code in a way that is easy and convient to reuse.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://dreadbot.github.io/DreadDocs/java/classes/">
@@ -21,21 +21,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dreadbot.github.io/DreadDocs/java/classes/">
     <meta property="og:title" content="Classes">
-    <meta property="og:description" content="Classes are one of the most important features of Java.">
+    <meta property="og:description" content="Classes are one of the most important features of Java. They allow us to represent and package code in a way that is easy and convient to reuse.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://dreadbot.github.io/DreadDocs/java/classes/">
     <meta property="twitter:title" content="Classes">
-    <meta property="twitter:description" content="Classes are one of the most important features of Java.">
+    <meta property="twitter:description" content="Classes are one of the most important features of Java. They allow us to represent and package code in a way that is easy and convient to reuse.">
 
-    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("/DreadDocs/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.4.1.748108410308" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.748476974400" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.4.1.748108410308" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.4.1" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.4.1.748108410308" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748476974400" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748476974400" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.748476974400" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -170,7 +171,23 @@
         <span>Classes</span>
     </h1>
 </doc-anchor-target>
-<p>Classes are one of the most important features of Java.</p>
+<p><code v-pre>Classes</code> are one of the most important features of Java. They allow us to represent and package code in a way that is easy and convient to reuse.<br />
+Lets look at an example:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">public class Robot {
+
+    private int robotAge;
+    public boolean isRobotOn = false;
+
+    public Robot() {
+        this.robotAge = 3;
+        this.isRobotOn = true;
+    }
+
+}</code></pre>
+</doc-codeblock></div>
+<p>There is a lot going on here, but lets break it down.<br />
+First, lets focus on <code v-pre>modifiers</code>. <code v-pre>public</code> and <code v-pre>private</code> before the variables, classes, and functions are <code v-pre>modifiers</code>. Modifiers allow us to give or restrict access to something.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -237,6 +254,6 @@
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Classes", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Classes", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
