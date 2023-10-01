@@ -13,11 +13,11 @@ Consider starting in [Java](Java/Java.md), or if you know about Java and OOP, ma
 ## Getting Started
 
 !!!warning
-If you are using a robotics computer, everything will be set up for you already
+If you are using a robotics computer, everything will be set up for you already!
 !!!
 
 !!!info
-This tutorial is focused on a Windows installation, if you need help with installation on a different OS, reach out in the Discord server
+This tutorial is focused on a Windows installation, if you need help with installation on a different OS, reach out on the Discord server
 !!!
 
 1. To get started, head to the [WPILib Installation Guide](https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html) and click the blue download button (It should be platform specific).
