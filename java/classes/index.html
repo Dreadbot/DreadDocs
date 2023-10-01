@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/DreadDocs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.748476974400">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.749516207465">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.748476974400" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.749516207465" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.748476974400" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.749516207465" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.748476974400" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.748476974400" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.749516207465" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.749516207465" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -187,7 +187,8 @@ Lets look at an example:</p>
 }</code></pre>
 </doc-codeblock></div>
 <p>There is a lot going on here, but lets break it down.<br />
-First, lets focus on <code v-pre>modifiers</code>. <code v-pre>public</code> and <code v-pre>private</code> before the variables, classes, and functions are <code v-pre>modifiers</code>. Modifiers allow us to give or restrict access to something.</p>
+First, lets focus on <code v-pre>modifiers</code>. <code v-pre>public</code> and <code v-pre>private</code> before the variables, classes, and functions are <code v-pre>modifiers</code>. Modifiers allow us to give or restrict access to something. In this example, the variable <code v-pre>robotAge</code> is private, so that means only the class itself has access to it, and nothing else can read or write it. The variable <code v-pre>isrobotOn</code> however, is public, meaning any piece of code can read and write to it.</p>
+<p>One important clairification to make is that these are not technically variables, they are <code v-pre>members</code>, that means they act slightly differently than variables. We will touch more on it later.</p>
 
                                 
                                 <!-- Required only on API pages -->
