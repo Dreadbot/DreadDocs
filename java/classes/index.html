@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/DreadDocs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.750904585791">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.753317129284">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -31,12 +31,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.750904585791" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.753317129284" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.750904585791" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.753317129284" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.750904585791" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.750904585791" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.753317129284" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.753317129284" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -184,12 +184,79 @@ Lets look at an example:</p>
         this.isRobotOn = true;
     }
 
+    public void turnRobotOff() {
+        this.isRobotOn = false;
+    }
+
 }</code></pre>
 </doc-codeblock></div>
-<p>There is a lot going on here, but lets break it down.<br />
-First, lets focus on <code v-pre>modifiers</code>. <code v-pre>public</code> and <code v-pre>private</code> before the variables, classes, and functions are <code v-pre>modifiers</code>. Modifiers allow us to give or restrict access to something. In this example, the variable <code v-pre>robotAge</code> is private, so that means only the class itself has access to it, and nothing else can read or write it. The variable <code v-pre>isrobotOn</code> however, is public, meaning any piece of code can read and write to it.</p>
-<p>One important clairification to make is that these are not technically variables, they are <code v-pre>members</code>, that means they act slightly differently than variables. We will touch more on it later.</p>
-<p>Next, lets talk about the <code v-pre>constructor</code>. The constructor is run when ever a new instance is created. This is our init function, and we usally initialize our <code v-pre>member</code> variables here. It looks sort of like a <a href="../functions/">Function</a>, but it doesn&#x27;t have a return type, and the name of the function is capitalized and is the same as the class.</p>
+<doc-anchor-target id="modifiers">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modifiers">#</doc-anchor-trigger>
+        <span>Modifiers</span>
+    </h2>
+</doc-anchor-target>
+<p>There is a lot going on here, but let&#x27;s break it down.<br />
+First, let&#x27;s focus on <code v-pre>modifiers</code>. <code v-pre>public</code> and <code v-pre>private</code> before the variables, classes, and functions are <code v-pre>modifiers</code>. Modifiers allow us to give or restrict access to something. In this example, the variable <code v-pre>robotAge</code> is private, so that means only the class itself has access to it, and nothing else can read or write it. The variable <code v-pre>isrobotOn</code> however, is public, meaning any piece of code can read and write to it.</p>
+<p>One important clarification to make is that these are not technically variables, they are <code v-pre>members</code>, that means they act slightly differently than variables. We will touch more on it later.</p>
+<doc-anchor-target id="constructor">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#constructor">#</doc-anchor-trigger>
+        <span>Constructor</span>
+    </h2>
+</doc-anchor-target>
+<p>Next, let&#x27;s talk about the <code v-pre>constructor</code>. The constructor is run whenever a new <code v-pre>instance</code> is created. This is our init &quot;function&quot;. It looks sort of like a <a href="../functions/">Function</a>, but it doesn&#x27;t have a return type, and the name of the function is capitalized and is the same name as the class.  You should put anything that needs to be initialized when a new instance is created here, such as setting up members and calling functions.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-300"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-300" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Even though the constructor is not a function, you can still pass in input <code v-pre>arguments</code>!
+See <a href="../functions/">Functions</a> for more information.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="dot-operator">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dot-operator">#</doc-anchor-trigger>
+        <span>Dot Operator</span>
+    </h2>
+</doc-anchor-target>
+<p>You may have noticed that the member initialization inside the constructor looks different than a normal variable declaration. The two things in front of the variable are the <code v-pre>this</code> keyword and the member operator, or &quot;dot&quot; as many people call it. Let&#x27;s break it down:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">this.robotAge = 3;</code></pre>
+</doc-codeblock></div>
+<p>The <code v-pre>this</code> keyword refers to the parent class that the code is running in, so in this case, <code v-pre>this</code> means the Robot class object. Next, let&#x27;s talk about the member operator, or &quot;dot&quot; as almost everyone calls it. It allows you to reference a member, method, or subclass that is declared within the class. On the left of the dot operator, you put the name of the object you want to reference from, and on the right, you put the name of the member, method, or subclass you want to reference. In this case, we reference the Robot class, and then we reference the <code v-pre>robotAge</code> member. This may seem redundant, but we use this to clarify which variables are arguments and which are members, allowing us to have the same named arguments as members. However, if you differently named arguments and members or no arguments at all, it is not necessary, but it is a best practice.</p>
+<doc-anchor-target id="methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#methods">#</doc-anchor-trigger>
+        <span>Methods</span>
+    </h2>
+</doc-anchor-target>
+<p>Another piece of classes we have yet to talk about are <code v-pre>methods</code>. Methods are special functions inside of classes, and they work basically the same way. however, you need to include a <code v-pre>modifier</code> for them to function properly. to call methods, you simply use the dot operator, such as:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">this.turnRobotOff();</code></pre>
+</doc-codeblock></div>
+<p>As you can see, you call a method the same as a function, just with the dot operator and reference to a class.</p>
+<doc-anchor-target id="instantiation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#instantiation">#</doc-anchor-trigger>
+        <span>Instantiation</span>
+    </h2>
+</doc-anchor-target>
+<p>We have a class, now how do we use it? Classes on their own do not run their code unless they are <code v-pre>instantiated</code>, which means making a live, working copy of the &quot;blueprint&quot; that is the class. It&#x27;s kind of like a house, the instance is the actual house and the blueprint is the class. Each instance is its own &quot;ecosystem&quot; of members and methods, which means that each instance can have different values for each of the different members. Such as 2 Robot instances having different values for isRobotOn. So how do we create a new instance of a class?</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-java"><code v-pre class="language-java">Robot robotInstance = new Robot();</code></pre>
+</doc-codeblock></div>
+<p>Whenever we make a new instance, we need to set it to a variable so that we can reference it later. You probably have also noticed that the type of the variable is <code v-pre>Robot</code>! Because we need a type for our instance, and its not one of the primitives, we need to use the class as the type, which is as simple as typing the name of the class you are instantiating. Next, let&#x27;s look at the <code v-pre>new</code> keyword, this tells java we want a new instance of whatever class comes after the <code v-pre>new</code> keyword. Then we add two parentheses to call the constructor and voila! You have your very own instance.</p>
 
                                 
                                 <!-- Required only on API pages -->
