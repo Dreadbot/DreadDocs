@@ -1,6 +1,7 @@
 ---
 order: 99
 ---
+
 # Variables
 
 A `variable` is kind of like a named box that holds something.
